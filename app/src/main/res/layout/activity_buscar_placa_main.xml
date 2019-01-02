@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background"
+    tools:context="corp.cemsa.nexaapp.BuscarPlaca.BuscarPlacaMainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese placa de camión"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/ic_search"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etxt_placa"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Placa"
+            android:enabled="false"
+android:focusable="false"
+            android:text="AOC123"
+            android:textSize="16dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:onClick="BuscarPlaca"
+            android:text="Buscar"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/search_placa"
+        >
+            <TextView
+            android:id="@+id/txt_mensaje"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            tools:hint="mensaje de placas"
+            android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+</LinearLayout>

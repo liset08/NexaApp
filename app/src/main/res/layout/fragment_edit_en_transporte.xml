@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="770dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="10dp"
+                    android:text="Registro de camiones"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="530dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="1"
+                        android:columnOrderPreserved="false"
+                        android:listSelector="#0f0"
+
+                        android:paddingTop="0dp"
+                        android:rowCount="1"
+                        tools:ignore="UselessParent"
+                        tools:targetApi="ice_cream_sandwich">
+
+                        <!-- Row 1 -->
+
+                        <!-- Column 1 -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="16dp"
+                            android:layout_rowWeight="1"
+                            app:cardBackgroundColor="@android:color/transparent"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Fecha de Salida: "
+                                        android:layout_weight="1"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/etxt_sg"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+                                        android:hint="04/12/2018"
+                                        android:layout_marginLeft="10dp"
+                                        android:inputType="textPersonName" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="10dp"
+
+                                    android:layout_weight="0"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Fecha de Entrada : "
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:layout_weight="1"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+
+                                        android:layout_marginLeft="10dp"
+                                        android:inputType="textPersonName" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Placa : "
+                                        android:layout_weight="1"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+                                        android:id="@+id/etxt_o"
+
+                                        android:hint="AOC123"
+                                        android:layout_marginLeft="10dp"
+                                        android:inputType="textPersonName" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Estado de envio: "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+                                        android:layout_weight="1"
+                                        android:textStyle="bold" />
+
+                                    <Spinner
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/etxt_r"
+
+                                        android:layout_weight="1" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <!-- Column 1 -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="16dp"
+                            android:layout_rowWeight="1"
+                            app:cardBackgroundColor="@android:color/transparent"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="0.8"
+                                        android:text=" "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_vertical|center_horizontal"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="0.8"
+                                        android:text="Entrada"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp"
+                                        android:layout_marginLeft="20dp"
+                                        android:textStyle="bold" />
+
+
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_vertical|center_horizontal"                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="0.8"
+                                        android:text="Salida"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp"
+
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="0.8"
+
+                                        android:text="Peso: "
+
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="10dp"
+                                        android:ems="10"
+                                        android:textSize="14dp"
+                                        android:inputType="textPersonName" />
+
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+                                        android:hint="23.5"
+                                        android:textSize="14dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:id="@+id/etxt_sa"
+
+                                        android:inputType="textPersonName" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="0.8"
+                                        android:text="Humedad : "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="10dp"
+                                        android:textSize="14dp"
+                                        android:ems="10"
+                                        android:layout_marginBottom="10dp"
+
+                                        android:inputType="textPersonName" />
+
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+                                        android:hint="23.5"
+                                        android:layout_marginBottom="10dp"
+                                        android:textSize="14dp"
+                                        android:id="@+id/etxt_sb"
+
+                                        android:inputType="textPersonName" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="0.8"
+                                        android:text="Temperatura : "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+                                        android:textSize="14dp"
+
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:inputType="textPersonName" />
+
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+                                        android:hint="23.5"
+                                        android:textSize="14dp"
+                                        android:id="@+id/etxt_sc"
+
+                                        android:layout_marginBottom="10dp"
+                                        android:inputType="textPersonName" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+
+
+
+                    </GridLayout>
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="1"
+                        android:columnOrderPreserved="false"
+                        android:listSelector="#0f0"
+                        android:paddingTop="0dp"
+                        android:rowCount="1"
+                        tools:ignore="UselessParent"
+                        tools:targetApi="ice_cream_sandwich">
+
+                        <!-- Row 1 -->
+
+                        <!-- Column 1 -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginBottom="16dp"
+                            android:layout_rowWeight="1"
+                            app:cardBackgroundColor="@android:color/transparent"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Distancia recorrida : "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+                                        android:layout_weight="1"
+
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:ems="10"
+                                        android:inputType="textPersonName" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="10dp"
+
+                                    android:layout_weight="0"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Perdida (Kg) : "
+                                        android:layout_weight="1"
+
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        android:ems="10"
+                                        android:inputType="textPersonName" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <!-- Column 1 -->
+
+
+
+
+                    </GridLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_cancel_aviso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Guardar"
+                        android:background="@android:color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:onClick="GuardarRegEdit"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
